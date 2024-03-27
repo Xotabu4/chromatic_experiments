@@ -10,8 +10,6 @@ jobs:
   chromatic:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright:v1.42.1-jammy
     env: 
       CHROMATIC_ARCHIVE_LOCATION: "./test-results/"
       CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
@@ -20,8 +18,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  
-      - name: e2e tests
-        run: npm cit
+      - name: Install
+        run: npm ci
+      - name: Prepare browsers
+        run: npx playwright install
+      - name: Prepare browsers
+        run: npm test
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
