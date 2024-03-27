@@ -20,8 +20,8 @@ jobs:
           fetch-depth: 0  
       - name: Install
         run: npm ci
-      - name: Prepare browsers
-        run: npx playwright install
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
       - name: е2е tests
         run: npm test
       - name: Run Chromatic
