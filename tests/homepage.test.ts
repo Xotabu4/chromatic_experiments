@@ -8,5 +8,4 @@ test("Homepage", async ({ page }) => {
   await page.goto("https://shopdemo-alex-hot.koyeb.app");  
   
   await expect(page).toHaveTitle("MERN Store");  
-  
 });
