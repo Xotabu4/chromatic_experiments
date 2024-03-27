@@ -1,0 +1,24 @@
+@storybook/cli v8.0.4
+
+info => Cleaning outputDir: ../../../../../var/folders/0t/cjbf4_v13fv97f_qgn6txcpc0000gn/T/chromatic--98309-clSs3eC17gJ0
+info => Loading presets
+info => Building manager..
+WARN unable to find package.json for @chromatic-com/shared-e2e
+info => Manager built (89 ms)
+info => Building preview..
+info Addon-docs: using MDX3
+info => Using implicit CSS loaders
+info => Using default Webpack5 setup
+info => Copying static files: test-results/chromatic-archives/archive at ../../../../../var/folders/0t/cjbf4_v13fv97f_qgn6txcpc0000gn/T/chromatic--98309-clSs3eC17gJ0
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   297.dd105c50.iframe.bundle.js (984 KiB)
+info => Preview built (3.4 s)
+info => Output directory: /var/folders/0t/cjbf4_v13fv97f_qgn6txcpc0000gn/T/chromatic--98309-clSs3eC17gJ0
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+

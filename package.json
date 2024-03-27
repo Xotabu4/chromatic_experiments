@@ -5,5 +5,7 @@
     "@types/node": "^20.11.30",
     "chromatic": "^11.2.0"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "npx chromatic --playwright --exit-zero-on-changeset"
+  }
 }
