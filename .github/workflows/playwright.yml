@@ -6,7 +6,7 @@ jobs:
   chromatic:
     runs-on: ubuntu-latest
     env: 
-      CHROMATIC_ARCHIVE_LOCATION: "./test-results/chromatic-archives"
+      CHROMATIC_ARCHIVE_LOCATION: "./test-results/"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
