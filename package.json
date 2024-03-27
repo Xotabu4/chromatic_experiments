@@ -6,7 +6,7 @@
     "chromatic": "^11.2.0"
   },
   "scripts": {
-    "test": "npx chromatic --playwright --exit-zero-on-changeset",
+    "test": "playwright test",
     "chromatic": "chromatic --playwright --exit-zero-on-changes"
   }
 }

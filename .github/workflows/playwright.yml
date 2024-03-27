@@ -22,7 +22,7 @@ jobs:
         run: npm ci
       - name: Prepare browsers
         run: npx playwright install
-      - name: Prepare browsers
+      - name: е2е tests
         run: npm test
       - name: Run Chromatic
         uses: chromaui/action@latest
