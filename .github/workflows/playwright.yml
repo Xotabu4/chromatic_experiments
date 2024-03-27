@@ -5,6 +5,8 @@ on: push
 jobs:
   chromatic:
     runs-on: ubuntu-latest
+    env: 
+      CHROMATIC_ARCHIVE_LOCATION: "./test-results/chromatic-archives"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,7 +22,6 @@ jobs:
       # ...
       # Your existing setup to run Playwright tests
       # ...
-
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
@@ -29,4 +30,3 @@ jobs:
           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         # ⚠️ Optionally configure the archive loation with env vars
-        # env: CHROMATIC_ARCHIVE_LOCATION=./custom/dir
