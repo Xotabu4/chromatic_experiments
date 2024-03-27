@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@chromatic-com/playwright": "^0.6.6",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "chromatic": "^11.2.0"
+  },
+  "scripts": {}
+}
